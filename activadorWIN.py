@@ -30,7 +30,7 @@ def comando(codigo,version):
 if platform.system() == 'Windows':
     try:
         version= platform.win32_edition()
-        codigo = codigos.get(version)
+        codigo = codigos[version]
         comando(codigo,version)
     except:
         print('error')
